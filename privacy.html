@@ -8,57 +8,183 @@
   :root { --bg: #EDE3CC; --ink: #2A1F17; --muted: #6A5A48; --accent: #7B2340; --line: #D3C3A2; --surface: #F8F0DC; }
   @media (prefers-color-scheme: dark) { :root { --bg: #1C1612; --ink: #F0E6D0; --muted: #BBAA90; --accent: #E9C46A; --line: #4B3E32; --surface: #28201A; } }
   body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 Georgia, 'Times New Roman', serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
   h1 { color: var(--accent); font-size: 30px; margin: 0 0 4px; }
-  .langs { display: flex; gap: 12px; margin: 0 0 24px; font-family: system-ui, sans-serif; font-size: 14px; }
+  .langs { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 24px; font-family: system-ui, sans-serif; font-size: 14px; }
   .langs a { color: var(--accent); }
-  section { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 4px 20px 12px; margin: 0 0 20px; }
-  h2 { font-size: 21px; margin: 18px 0 8px; }
-  p, li { margin: 0 0 10px; }
+  section { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 4px 20px 14px; margin: 0 0 20px; }
+  h2 { font-size: 23px; margin: 18px 0 8px; }
+  h3 { font-size: 17px; margin: 18px 0 6px; }
+  p, li { margin: 0 0 8px; }
+  ul { padding-left: 20px; }
   .muted { color: var(--muted); font-size: 14px; }
   a { color: var(--accent); }
+  .tbl { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 4px 0 10px; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  th { font-family: system-ui, sans-serif; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
 </style>
 </head>
 <body>
 <main>
   <h1>Confédération</h1>
-  <p class="muted">Keleron Games · Nevermind Sarl · <a href="mailto:games@keleron.ch">games@keleron.ch</a> · <span>17.10.2026 · v1.1</span></p>
+  <p class="muted">Keleron Games · Nevermind Sarl · <a href="mailto:games@keleron.ch">games@keleron.ch</a> · <span>18.10.2026 · v1.1</span></p>
   <nav class="langs"><a href="./">← Confédération</a><a href="#fr">Français</a><a href="#de">Deutsch</a><a href="#en">English</a></nav>
 
+  <!-- ===================== FRANÇAIS ===================== -->
   <section id="fr" lang="fr">
     <h2>Politique de confidentialité</h2>
-    <p>L'application Confédération ne collecte, ne transmet et ne vend <strong>aucune donnée personnelle</strong>.</p>
+    <p>Cette politique s'applique à l'application iOS <strong>Confédération</strong> (version 1.1 et suivantes) et à sa version web.</p>
+
+    <h3>1. Responsable</h3>
+    <p>Nevermind Sarl, Suisse. Keleron Games est une marque de Nevermind Sarl. Contact : <a href="mailto:games@keleron.ch">games@keleron.ch</a>.</p>
+
+    <h3>2. En bref</h3>
     <ul>
-      <li>Aucun compte et aucun outil de statistiques. Le jeu lui-même fonctionne sans connexion.</li>
-      <li><strong>Publicité</strong> : l'application affiche des annonces de Google AdMob (entre deux parties, et des vidéos facultatives pour débloquer des contenus). Pour cela, Google peut traiter : un identifiant de l'appareil, les annonces vues et les interactions avec elles, d'autres données d'utilisation, une position approximative déduite de l'adresse IP, ainsi que des données de diagnostic (plantages, performances). Ces données ne sont pas liées à ton identité : l'application n'a pas de compte et ne demande pas l'autorisation de suivi d'Apple (identifiant publicitaire IDFA). Au premier lancement, tu peux accepter ou refuser les annonces personnalisées ; sans accord, seules des annonces non personnalisées sont affichées. Voir la <a href="https://policies.google.com/technologies/ads">politique de Google</a>.</li>
-      <li>La partie en cours, les noms saisis pour les joueurs et la langue choisie sont enregistrés <strong>uniquement sur ton appareil</strong>. Ils sont effacés si tu supprimes l'application.</li>
+      <li>Pas de compte, pas de nom réel demandé, pas d'outil de statistiques de notre part.</li>
+      <li>Nous n'avons <strong>aucun serveur</strong> : nous ne recevons, ne stockons et ne vendons aucune donnée te concernant.</li>
+      <li>Les seules données qui quittent ton appareil sont celles que traite <strong>Google AdMob</strong> pour afficher des annonces (section 4).</li>
     </ul>
-    <p><strong>Responsable</strong> : Nevermind Sarl, Suisse. Keleron Games est une marque de Nevermind Sarl.</p>
-    <p>Questions : écris-nous à <a href="mailto:games@keleron.ch">games@keleron.ch</a>.</p>
+
+    <h3>3. Données enregistrées sur ton appareil</h3>
+    <p>La partie en cours, les noms saisis pour les joueurs, la langue choisie et tes statistiques de jeu sont enregistrés <strong>uniquement sur ton appareil</strong>. Ils ne sont transmis à personne et sont effacés si tu supprimes l'application.</p>
+
+    <h3>4. Publicité (Google AdMob)</h3>
+    <p>L'application affiche des annonces de Google AdMob : une annonce entre deux parties et des vidéos <strong>facultatives</strong> pour débloquer des contenus (carte actuelle, cantons de départ, hallers). Le fournisseur est Google Ireland Limited (Dublin) et, pour certains traitements, Google LLC (États-Unis). Le kit de Google peut collecter :</p>
+    <div class="tbl"><table>
+      <tr><th>Donnée</th><th>Exemples</th><th>Finalité</th></tr>
+      <tr><td>Identifiant de l'appareil</td><td>Identifiant lié à l'app ou au développeur (pas l'identifiant publicitaire d'Apple, voir plus bas)</td><td>Publicité de tiers, mesure</td></tr>
+      <tr><td>Interactions</td><td>Ouverture de l'app, touches sur les annonces, vidéos regardées</td><td>Publicité de tiers, mesure</td></tr>
+      <tr><td>Données publicitaires</td><td>Annonces affichées</td><td>Publicité de tiers, mesure</td></tr>
+      <tr><td>Autres données d'utilisation</td><td>Moment et fréquence d'affichage des annonces</td><td>Publicité de tiers, mesure</td></tr>
+      <tr><td>Position approximative</td><td>Région ou ville déduite de l'adresse IP (pas de GPS)</td><td>Publicité de tiers</td></tr>
+      <tr><td>Données de plantage</td><td>Rapports d'erreur du kit publicitaire</td><td>Diagnostic, publicité</td></tr>
+      <tr><td>Données de performance</td><td>Temps de chargement, consommation</td><td>Diagnostic, publicité</td></tr>
+      <tr><td>Autres diagnostics</td><td>Modèle d'appareil, version d'iOS</td><td>Diagnostic, publicité</td></tr>
+    </table></div>
+    <p><strong>Pas de suivi entre applications.</strong> L'application ne demande pas l'autorisation de suivi d'Apple (App Tracking Transparency). L'identifiant publicitaire d'Apple (IDFA) n'est donc pas accessible et tes données ne sont pas liées à ton identité.</p>
+    <p><strong>Ton choix.</strong> En Suisse, dans l'Espace économique européen et au Royaume-Uni, un formulaire de Google te demande au premier lancement si tu acceptes les annonces personnalisées. Si tu refuses, seules des annonces non personnalisées (basées sur le contexte) sont affichées. Tu peux changer d'avis à tout moment avec le bouton <strong>« Confidentialité »</strong> en haut de l'écran du jeu.</p>
+    <p><strong>Base légale.</strong> Ton consentement pour les annonces personnalisées ; notre intérêt légitime à financer un jeu gratuit pour les annonces non personnalisées et la mesure de leur diffusion.</p>
+    <p>Plus d'informations : <a href="https://policies.google.com/technologies/partner-sites">comment Google utilise les données</a> · <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>.</p>
+
+    <h3>5. Transfert à l'étranger et conservation</h3>
+    <p>Google peut traiter ces données hors de Suisse, notamment aux États-Unis, sur la base du Swiss-U.S. Data Privacy Framework et de clauses contractuelles types. Nous ne conservons aucune donnée ; Google les conserve selon sa propre politique.</p>
+
+    <h3>6. Version web</h3>
+    <p>La version web jouée dans Claude n'affiche <strong>aucune annonce de tiers</strong> : les emplacements « annonce » y sont de simples écrans d'attente internes, sans transmission de données. En mode en ligne, les noms des joueurs et les coups de la partie sont partagés avec les autres joueurs de la salle par l'intermédiaire de Claude (Anthropic).</p>
+
+    <h3>7. Enfants</h3>
+    <p>Le jeu convient à toute la famille mais ne s'adresse pas spécifiquement aux enfants de moins de 13 ans.</p>
+
+    <h3>8. Tes droits</h3>
+    <p>Selon la loi suisse sur la protection des données (LPD) et, le cas échéant, le RGPD, tu peux demander l'accès à tes données, leur rectification ou leur effacement, t'opposer à leur traitement et retirer ton consentement (bouton « Confidentialité »). Comme nous ne détenons aucune donnée, les demandes concernant les annonces se règlent directement auprès de Google. Tu peux aussi déposer une plainte auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT) ou de l'autorité de ton pays.</p>
+
+    <h3>9. Modifications</h3>
+    <p>Nous publierons ici toute modification de cette politique, avec sa date.</p>
   </section>
 
+  <!-- ===================== DEUTSCH ===================== -->
   <section id="de" lang="de">
     <h2>Datenschutzerklärung</h2>
-    <p>Die App Confédération erhebt, übermittelt und verkauft <strong>keine Personendaten</strong>.</p>
+    <p>Diese Erklärung gilt für die iOS-App <strong>Confédération</strong> (Version 1.1 und neuer) und ihre Webversion.</p>
+
+    <h3>1. Verantwortlich</h3>
+    <p>Nevermind Sarl, Schweiz. Keleron Games ist eine Marke der Nevermind Sarl. Kontakt: <a href="mailto:games@keleron.ch">games@keleron.ch</a>.</p>
+
+    <h3>2. Kurz gesagt</h3>
     <ul>
-      <li>Kein Konto und keine Statistik-Werkzeuge. Das Spiel selbst funktioniert ohne Internetverbindung.</li>
-      <li><strong>Werbung</strong>: Die App zeigt Anzeigen von Google AdMob (zwischen zwei Partien sowie freiwillige Videos, um Inhalte freizuschalten). Dafür kann Google Folgendes verarbeiten: eine Geräte-ID, gesehene Anzeigen und Interaktionen damit, weitere Nutzungsdaten, einen ungefähren Standort aus der IP-Adresse sowie Diagnosedaten (Abstürze, Leistung). Diese Daten sind nicht mit deiner Identität verknüpft: Die App hat kein Konto und fragt nicht nach Apples Tracking-Erlaubnis (Werbe-ID IDFA). Beim ersten Start kannst du personalisierte Anzeigen erlauben oder ablehnen; ohne Zustimmung werden nur nicht personalisierte Anzeigen gezeigt. Siehe die <a href="https://policies.google.com/technologies/ads">Richtlinien von Google</a>.</li>
-      <li>Das laufende Spiel, die eingegebenen Spielernamen und die gewählte Sprache werden <strong>nur auf deinem Gerät</strong> gespeichert. Sie werden gelöscht, wenn du die App entfernst.</li>
+      <li>Kein Konto, kein echter Name nötig, keine eigenen Statistik-Werkzeuge.</li>
+      <li>Wir betreiben <strong>keinen Server</strong>: Wir erhalten, speichern und verkaufen keine Daten über dich.</li>
+      <li>Nur <strong>Google AdMob</strong> verarbeitet Daten, um Werbung anzuzeigen (Abschnitt 4).</li>
     </ul>
-    <p><strong>Verantwortlich</strong>: Nevermind Sarl, Schweiz. Keleron Games ist eine Marke der Nevermind Sarl.</p>
-    <p>Fragen: Schreib uns an <a href="mailto:games@keleron.ch">games@keleron.ch</a>.</p>
+
+    <h3>3. Daten auf deinem Gerät</h3>
+    <p>Das laufende Spiel, die eingegebenen Spielernamen, die gewählte Sprache und deine Spielstatistik werden <strong>nur auf deinem Gerät</strong> gespeichert. Sie werden niemandem übermittelt und gelöscht, wenn du die App entfernst.</p>
+
+    <h3>4. Werbung (Google AdMob)</h3>
+    <p>Die App zeigt Anzeigen von Google AdMob: eine Anzeige zwischen zwei Partien sowie <strong>freiwillige</strong> Videos, um Inhalte freizuschalten (heutige Karte, Startkantone, Haller). Anbieter ist Google Ireland Limited (Dublin) und für bestimmte Verarbeitungen Google LLC (USA). Googles Software kann erheben:</p>
+    <div class="tbl"><table>
+      <tr><th>Daten</th><th>Beispiele</th><th>Zweck</th></tr>
+      <tr><td>Geräte-ID</td><td>App- oder entwicklerbezogene Kennung (nicht Apples Werbe-ID, siehe unten)</td><td>Werbung Dritter, Messung</td></tr>
+      <tr><td>Interaktionen</td><td>App-Start, Tippen auf Anzeigen, angesehene Videos</td><td>Werbung Dritter, Messung</td></tr>
+      <tr><td>Werbedaten</td><td>Angezeigte Werbung</td><td>Werbung Dritter, Messung</td></tr>
+      <tr><td>Weitere Nutzungsdaten</td><td>Zeitpunkt und Häufigkeit der Anzeigen</td><td>Werbung Dritter, Messung</td></tr>
+      <tr><td>Ungefährer Standort</td><td>Region oder Stadt aus der IP-Adresse (kein GPS)</td><td>Werbung Dritter</td></tr>
+      <tr><td>Absturzdaten</td><td>Fehlerberichte der Werbesoftware</td><td>Diagnose, Werbung</td></tr>
+      <tr><td>Leistungsdaten</td><td>Ladezeiten, Energieverbrauch</td><td>Diagnose, Werbung</td></tr>
+      <tr><td>Weitere Diagnosedaten</td><td>Gerätemodell, iOS-Version</td><td>Diagnose, Werbung</td></tr>
+    </table></div>
+    <p><strong>Kein App-übergreifendes Tracking.</strong> Die App fragt nicht nach Apples Tracking-Erlaubnis (App Tracking Transparency). Apples Werbe-ID (IDFA) ist daher nicht zugänglich, und deine Daten sind nicht mit deiner Identität verknüpft.</p>
+    <p><strong>Deine Wahl.</strong> In der Schweiz, im Europäischen Wirtschaftsraum und im Vereinigten Königreich fragt dich ein Formular von Google beim ersten Start, ob du personalisierte Anzeigen erlaubst. Lehnst du ab, werden nur nicht personalisierte (kontextbezogene) Anzeigen gezeigt. Du kannst deine Wahl jederzeit über die Schaltfläche <strong>«Datenschutz»</strong> oben im Spiel ändern.</p>
+    <p><strong>Rechtsgrundlage.</strong> Deine Einwilligung für personalisierte Anzeigen; unser berechtigtes Interesse, ein kostenloses Spiel zu finanzieren, für nicht personalisierte Anzeigen und deren Messung.</p>
+    <p>Mehr dazu: <a href="https://policies.google.com/technologies/partner-sites">Wie Google Daten verwendet</a> · <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.</p>
+
+    <h3>5. Übermittlung ins Ausland und Aufbewahrung</h3>
+    <p>Google kann diese Daten ausserhalb der Schweiz verarbeiten, insbesondere in den USA, gestützt auf das Swiss-U.S. Data Privacy Framework und Standardvertragsklauseln. Wir speichern keine Daten; Google bewahrt sie nach seinen eigenen Richtlinien auf.</p>
+
+    <h3>6. Webversion</h3>
+    <p>Die in Claude gespielte Webversion zeigt <strong>keine Werbung Dritter</strong>: Die «Werbe»-Plätze sind dort nur interne Warteschirme ohne Datenübermittlung. Im Online-Modus werden Spielernamen und Spielzüge über Claude (Anthropic) mit den anderen Personen im Raum geteilt.</p>
+
+    <h3>7. Kinder</h3>
+    <p>Das Spiel eignet sich für die ganze Familie, richtet sich aber nicht speziell an Kinder unter 13 Jahren.</p>
+
+    <h3>8. Deine Rechte</h3>
+    <p>Nach dem Schweizer Datenschutzgesetz (DSG) und gegebenenfalls der DSGVO kannst du Auskunft, Berichtigung oder Löschung verlangen, der Bearbeitung widersprechen und deine Einwilligung widerrufen (Schaltfläche «Datenschutz»). Da wir keine Daten besitzen, richten sich Anfragen zur Werbung direkt an Google. Du kannst dich auch beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) oder der Behörde deines Landes beschweren.</p>
+
+    <h3>9. Änderungen</h3>
+    <p>Änderungen dieser Erklärung veröffentlichen wir hier mit Datum.</p>
   </section>
 
+  <!-- ===================== ENGLISH ===================== -->
   <section id="en" lang="en">
     <h2>Privacy policy</h2>
-    <p>The Confédération app does not collect, transmit or sell <strong>any personal data</strong>.</p>
+    <p>This policy applies to the iOS app <strong>Confédération</strong> (version 1.1 and later) and to its web version.</p>
+
+    <h3>1. Controller</h3>
+    <p>Nevermind Sarl, Switzerland. Keleron Games is a brand of Nevermind Sarl. Contact: <a href="mailto:games@keleron.ch">games@keleron.ch</a>.</p>
+
+    <h3>2. In short</h3>
     <ul>
-      <li>No account and no analytics tools. The game itself works offline.</li>
-      <li><strong>Advertising</strong>: the app shows ads from Google AdMob (between games, and optional videos to unlock content). To do so, Google may process: a device identifier, the ads you see and your interactions with them, other usage data, an approximate location derived from the IP address, and diagnostic data (crashes, performance). This data is not linked to your identity: the app has no account and does not ask for Apple's tracking permission (advertising identifier IDFA). On first launch you can accept or refuse personalised ads; without consent only non-personalised ads are shown. See <a href="https://policies.google.com/technologies/ads">Google's policy</a>.</li>
-      <li>The game in progress, the player names you type and your chosen language are stored <strong>only on your device</strong>. They are deleted when you remove the app.</li>
+      <li>No account, no real name required, no analytics tools of our own.</li>
+      <li>We run <strong>no servers</strong>: we do not receive, store or sell any data about you.</li>
+      <li>The only data that leaves your device is processed by <strong>Google AdMob</strong> to show ads (section 4).</li>
     </ul>
-    <p><strong>Controller</strong>: Nevermind Sarl, Switzerland. Keleron Games is a brand of Nevermind Sarl.</p>
-    <p>Questions: write to us at <a href="mailto:games@keleron.ch">games@keleron.ch</a>.</p>
+
+    <h3>3. Data stored on your device</h3>
+    <p>The game in progress, the player names you type, your chosen language and your game statistics are stored <strong>only on your device</strong>. They are not sent to anyone and are deleted when you remove the app.</p>
+
+    <h3>4. Advertising (Google AdMob)</h3>
+    <p>The app shows ads from Google AdMob: one ad between games, and <strong>optional</strong> videos to unlock content (today's map, starting cantons, hallers). The provider is Google Ireland Limited (Dublin) and, for some processing, Google LLC (USA). Google's software may collect:</p>
+    <div class="tbl"><table>
+      <tr><th>Data</th><th>Examples</th><th>Purpose</th></tr>
+      <tr><td>Device ID</td><td>App- or developer-scoped identifier (not Apple's advertising ID, see below)</td><td>Third-party advertising, measurement</td></tr>
+      <tr><td>Product interaction</td><td>App launches, taps on ads, videos watched</td><td>Third-party advertising, measurement</td></tr>
+      <tr><td>Advertising data</td><td>Ads shown</td><td>Third-party advertising, measurement</td></tr>
+      <tr><td>Other usage data</td><td>When and how often ads are shown</td><td>Third-party advertising, measurement</td></tr>
+      <tr><td>Coarse location</td><td>Region or city derived from the IP address (no GPS)</td><td>Third-party advertising</td></tr>
+      <tr><td>Crash data</td><td>Error reports from the ad software</td><td>Diagnostics, advertising</td></tr>
+      <tr><td>Performance data</td><td>Load times, energy use</td><td>Diagnostics, advertising</td></tr>
+      <tr><td>Other diagnostic data</td><td>Device model, iOS version</td><td>Diagnostics, advertising</td></tr>
+    </table></div>
+    <p><strong>No cross-app tracking.</strong> The app does not ask for Apple's tracking permission (App Tracking Transparency). Apple's advertising identifier (IDFA) is therefore not available, and your data is not linked to your identity.</p>
+    <p><strong>Your choice.</strong> In Switzerland, the European Economic Area and the United Kingdom, a Google form asks on first launch whether you accept personalised ads. If you refuse, only non-personalised (contextual) ads are shown. You can change your choice at any time with the <strong>"Privacy"</strong> button at the top of the game screen.</p>
+    <p><strong>Legal basis.</strong> Your consent for personalised ads; our legitimate interest in funding a free game for non-personalised ads and ad measurement.</p>
+    <p>More: <a href="https://policies.google.com/technologies/partner-sites">how Google uses data</a> · <a href="https://policies.google.com/privacy">Google privacy policy</a>.</p>
+
+    <h3>5. Transfers abroad and retention</h3>
+    <p>Google may process this data outside Switzerland, in particular in the USA, under the Swiss-U.S. Data Privacy Framework and standard contractual clauses. We keep no data; Google retains it under its own policy.</p>
+
+    <h3>6. Web version</h3>
+    <p>The web version played in Claude shows <strong>no third-party ads</strong>: its "ad" slots are internal waiting screens that send no data. In online mode, player names and moves are shared with the other people in the room through Claude (Anthropic).</p>
+
+    <h3>7. Children</h3>
+    <p>The game suits the whole family but is not specifically directed at children under 13.</p>
+
+    <h3>8. Your rights</h3>
+    <p>Under the Swiss Federal Act on Data Protection (FADP) and, where applicable, the GDPR, you can request access, correction or deletion, object to processing and withdraw your consent ("Privacy" button). As we hold no data, requests about ads are handled directly by Google. You can also complain to the Swiss Federal Data Protection and Information Commissioner (FDPIC) or the authority in your country.</p>
+
+    <h3>9. Changes</h3>
+    <p>We will publish any change to this policy here, with its date.</p>
   </section>
 </main>
 </body>
